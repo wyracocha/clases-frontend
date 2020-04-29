@@ -7,7 +7,7 @@ Eso dice wikipedia, en la práctica nos encontraremos que HTML 5 es la suma de u
 ahora los elementos que componen una web tienen un sentido lógico. Del lado de CSS tenemos muchas mejoras: sombras, posicionamiento de objetos y selectores son solo una parte del lenguaje. Finalmente Javascript es la parte más desarrollada pues se han incluido muchas tecnologías que hacen el trabajo más ordenado.
 
 ## Ejemplo de una web con HTML5
-```html5
+```html
   <!DOCTYPE html>
   <html lang="es">
   <head>
@@ -31,13 +31,34 @@ ahora los elementos que componen una web tienen un sentido lógico. Del lado de 
   </body>
   </html>
 ```
-## Partes de la web
+### Partes de la web
 
-### DOCTYPE
+#### DOCTYPE
 Especifica al navegador que se usará HTML5 como lenguaje en la web.
-### Lang
+#### Lang
 Indica el lenguaje de la web, para que pueda ser traducida por los navegadores de ser necesario.
-### HEAD
+#### HEAD
 Bloque donde se inserta información adicional de la web y se agregan dependencias.
 ### BODY
 Sección donde se introduce todo el código de nuestra web: imágenes, texto informativo, videos, etc.
+
+## Un ejemplo base de css
+Antes de eso expliquemos que hace css: pone bonita tu web. <br>
+### FAQ
+¿Qué usa css para trabajar? selectores y estilos. <br>
+¿Qué es un selector? Digamos que es la forma en la que css encuentra un elemento en la web. <br>
+¿Y las sombras? eso es lo que llamamos estilos, son todas las instrucciones que un **selector** aplica a un elemento html.
+```css
+body{
+  font-size: 18px;
+}
+```
+## Y Javascript
+Javascript es la parte complicada, es un lenguaje de programación como tal y tiene muchos temas de los cuales hablar y que salen del alcance del curso. Sin embargo haremos lo posible por mostrar un buena base del lenguaje. <br>
+¿Pero para q sirve? digamos que lo puedes usar para permitirle al usuario interactuar con la web a un nivel superior, incluso puedes usarlo para hacer animaciones, videojuegos, controlar servidores, drones, etc. Pero para este curso lo usaremos para manipular los elementos html y acceder a su contenido.
+```html
+  <script> 
+    const diLoTuyo = 'ya me dio hambre profe';
+    alert(diLoTuyo);
+  </script>
+```
